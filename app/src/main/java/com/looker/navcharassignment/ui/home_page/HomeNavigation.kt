@@ -1,7 +1,6 @@
 package com.looker.navcharassignment.ui.home_page
 
 import androidx.compose.foundation.layout.PaddingValues
-import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavOptions
@@ -22,7 +21,6 @@ fun NavGraphBuilder.homeScreen(
 	composable(route = homeNavigationRoute) {
 		HomePage(
 			onCommentClick = onCommentClick,
-			viewModel = hiltViewModel(),
 			contentPadding = contentPadding
 		)
 	}

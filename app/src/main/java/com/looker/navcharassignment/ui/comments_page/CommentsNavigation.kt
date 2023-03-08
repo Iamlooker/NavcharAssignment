@@ -23,6 +23,9 @@ fun NavGraphBuilder.commentsPage(contentPadding: PaddingValues = PaddingValues()
 			navArgument(postIdArg) { type = NavType.LongType }
 		)
 	) {
-		CommentsPage(postId = it.arguments?.getLong(postIdArg), contentPadding = contentPadding)
+		CommentsPage(
+			postId = it.arguments?.getLong(postIdArg),
+			contentPadding = contentPadding
+		)
 	}
 }
